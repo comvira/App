@@ -8,6 +8,7 @@ public class TaskSeven {
         int m = 10;
         int n = in.nextInt();
         switch (n) {
+            //тут решил использовать другой символ ковычек
             case 905:
                 System.out.println("«Москва. Стоимость разговора: " + m * 4.15 + "»");
                 break;
