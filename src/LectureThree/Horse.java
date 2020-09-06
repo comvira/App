@@ -1,14 +1,13 @@
 package LectureThree;
 
 public class Horse extends Animal{
+    public Horse(String eat, String location) {
+        super(eat, location);
+    }
     String name = "Horse";
-    String eat = "Нет";
-    String location ="Киров";
+    String eat;
+    String location;
     String sleep = "Да";
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
 }

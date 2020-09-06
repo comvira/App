@@ -1,13 +1,12 @@
 package LectureThree;
 
 public class Cat extends Animal{
-    String location = "Москва";
-    String eat = "вискас";
+    public Cat(String eat, String location) {
+        super(eat, location);
+    }
+    String location;
+    String eat;
     String name = "Cat";
     String sleep = "Да";
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

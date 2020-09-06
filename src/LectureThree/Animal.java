@@ -1,15 +1,28 @@
 package LectureThree;
 
 public class Animal {
-    public static void makeNoise(String eat){
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location = location;
+    }
+
+    String food;
+    String location;
+
+    public void makeNoise(String eat){
         food = eat;
     }
 
-    public static void makeNoise(String sleep, String name){
+    public void makeNoise(String sleep, String name){
         System.out.println("Такое-то животное спит: " + name + " " + sleep);
     }
 
-    static String food;
-    static String location;
+    public String getLocation() {
+        return location;
+    }
+
+    public String getFood() {
+        return food;
+    }
 
 }
