@@ -6,15 +6,7 @@ public class Animal {
     }
 
     public static void makeNoise(String sleep, String name){
-        System.out.println("Такое-то животное спит: " + name);
-    }
-
-    public static void eat (String eat){
-        makeNoise(eat);
-    }
-
-    public static void sleep (String name){
-        makeNoise("Да",name);
+        System.out.println("Такое-то животное спит: " + name + " " + sleep);
     }
 
     static String food;

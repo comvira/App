@@ -6,4 +6,8 @@ public class Cat extends Animal{
     String name = "Cat";
     String sleep = "Да";
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

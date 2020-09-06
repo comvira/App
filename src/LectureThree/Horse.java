@@ -6,4 +6,9 @@ public class Horse extends Animal{
     String location ="Киров";
     String sleep = "Да";
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }
