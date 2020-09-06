@@ -16,13 +16,13 @@ public class Animal {
     public void makeNoise(String sleep, String name){
         System.out.println("Такое-то животное спит: " + name + " " + sleep);
     }
-
+/*
     public String getLocation() {
         return location;
     }
 
     public String getFood() {
         return food;
-    }
+    }*/
 
 }
