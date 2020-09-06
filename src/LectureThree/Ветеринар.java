@@ -2,8 +2,6 @@
 package LectureThree;
 
 public class Ветеринар extends AnimalRun{
-
-
     //наверно тут засада :(
     public void treatAnimal(Animal animal){
 

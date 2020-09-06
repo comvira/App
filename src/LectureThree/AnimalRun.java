@@ -8,6 +8,7 @@ public class AnimalRun {
         animal [0] = new Cat("Вискас", "Москва");
         animal [1] = new Dog("Нет","Подольск");
         animal [2] = new Horse("Да","Киров");
+        Ветеринар anialServices = new Ветеринар();
         for (int i = 2; i >= 0; i--) {
             System.out.println(animal[i]); //тут наверно завис :( не очень понимаю как реализовать
             // вывод из класса Ветеринар. пересмотрел три раза урок, но к сожалению не понял,
