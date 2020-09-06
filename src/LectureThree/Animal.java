@@ -1,14 +1,6 @@
 package LectureThree;
 
 public class Animal {
-/*    public Animal(String location, String food) {
-        this.location = location;
-        this.food = food;
-    }
-    public Animal(){
-
-    }*/
-
     public static void makeNoise(String eat){
         food = eat;
     }
