@@ -11,23 +11,12 @@ class Aspirant extends Student{
         return averageMark;
     }
 
-/*    public int getScholarship() {
+    public int getScholarship() {
         if (getAverageMark() == 5.0) {
             return (int) 200;
         } else {
             return 180;
-        }*/
-    @Override
-    public double getAverageMark() {
-        if (getAverageMark() == 5.0) {
-            return (int) 200.0;
-        } else {
-            return 180.0;
         }
     }
 
-    @Override
-    public void setAverageMark(double averageMark) {
-        this.averageMark = averageMark;
-    }
 }
