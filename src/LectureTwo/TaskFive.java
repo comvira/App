@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class TaskFive {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int min = 2147483647;
+        int min = in.nextInt(); //2147483647;
         int n;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             n = in.nextInt();
             if (n < min) {
                 min = n;
