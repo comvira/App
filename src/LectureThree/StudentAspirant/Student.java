@@ -1,4 +1,4 @@
-package LectureThree;
+package LectureThree.StudentAspirant;
 
 class Student {
     private double averageMark;

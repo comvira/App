@@ -1,4 +1,4 @@
-package LectureThree;
+package LectureThree.StudentAspirant;
 
 class Aspirant extends Student{
     private double averageMark;
@@ -7,13 +7,9 @@ class Aspirant extends Student{
         super(firstName, lastName, group, averageMark);
     }
 
-    public double averageMark() {
-        return averageMark;
-    }
-
     public int getScholarship() {
         if (getAverageMark() == 5.0) {
-            return (int) 200;
+            return 200;
         } else {
             return 180;
         }
