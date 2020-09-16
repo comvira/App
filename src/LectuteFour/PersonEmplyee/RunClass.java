@@ -2,31 +2,25 @@ package LectuteFour.PersonEmplyee;
 
 public class RunClass {
     public static void main(String[] args) {
-        String name;
-        Person employee = new Employee();
-        employee.setName("a");
-        Person person = new Employee();
-        person.setName("b");
-        Person student = new Employee();
-        student.setName("c");
-        Person UncnownPerson = new Employee();
-        student.setName("d");
+        //String name;
+        Person employee = new Employee("Employee");
+        //employee.setName("a");
+        Person person = new Person("Person") {
+            @Override
+            protected String getDescription() {
+                return "человек";
+            }
+        };
+        //person.setName("b");
+        Person student = new Student("Student");
+        //student.setName("c");
+        Person uncnownPerson = new UncnownPerson("Uncnown");
+        //uncnownPerson.setName("d");
 
-        //UncnownPerson uncnownPerson = new UncnownPerson();
-
-/*        if (person instanceof Person){
-            System.out.println("это сотрудник");
-        }*/
-
-        /*if (uncnownPerson instanceof Person){
-            System.out.println("uncnownPerson in person");
-        } else {
-            System.out.println("uncnownPerson not person");
-        }*/
-        System.out.println(employee.getName());
-        System.out.println(person.getName());
-        System.out.println(student.getName());
-        System.out.println(UncnownPerson.getName());
+        System.out.println(employee.getDescription());
+        System.out.println(person.getDescription());
+        System.out.println(student.getDescription());
+        System.out.println(uncnownPerson.getDescription());
     }
 }
 
