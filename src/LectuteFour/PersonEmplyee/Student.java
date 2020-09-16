@@ -1,16 +1,16 @@
 package LectuteFour.PersonEmplyee;
 
 public class Student extends Person {
-    private String name;
-
-    public void setName() {
-
-        this.name = name;
+    public Student(String name) {
+        super(name);
     }
 
     @Override
+    public String getName() {
+        return super.getName();
+    }
+    @Override
     public String getDescription() {
-
-        return "Student";
+        return "студент, изучающий вычислительную технику";
     }
 }

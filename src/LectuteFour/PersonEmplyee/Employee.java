@@ -1,19 +1,16 @@
 package LectuteFour.PersonEmplyee;
 
-import LectuteFour.PersonEmplyee.Person;
-
 public class Employee extends Person {
-    private String name;
-
-    public void setName() {
-
-        this.name = name;
+    public Employee(String name) {
+        super(name);
     }
 
     @Override
-    public String getDescription() {
-
-        return "Emloyee";
+    public String getName() {
+        return super.getName();
     }
-
+    @Override
+    public String getDescription() {
+        return "наёмный рабочий";
+    }
 }

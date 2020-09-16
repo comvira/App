@@ -1,17 +1,16 @@
 package LectuteFour.PersonEmplyee;
 
 public class UncnownPerson extends Person {
-    private String name;
-
-    public void setName() {
-
-        this.name = name;
+    public UncnownPerson(String name) {
+        super(name);
     }
 
     @Override
-    public String getDescription() {
-
-        return "UncnownPerson";
+    public String getName() {
+        return super.getName();
     }
-
+    @Override
+    public String getDescription() {
+        return "неизвестный";
+    }
 }
