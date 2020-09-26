@@ -1,15 +1,15 @@
-package LectuteFour;
+package LectuteFour.CarEngine;
 
-public class Engine {
+public abstract class Engine {
     private int power;
     private String manufacturer;
 
     public int getPower() {
-        return power;
+         return power;
     }
 
     public String getManufacturer() {
-        return manufacturer;
+         return manufacturer;
     }
 
     public void setPower(int power) {

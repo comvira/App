@@ -1,6 +1,6 @@
-package LectuteFour;
+package LectuteFour.CarEngine;
 
-public class SportCar extends Car{
+public class SportCar implements Car{
     @Override
     public void start() {
         System.out.println("SportCar поехал");

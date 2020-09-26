@@ -1,6 +1,11 @@
-package LectuteFour;
+package LectuteFour.CarEngine;
 
-public class Lorry extends Car {
+public class Lorry implements Car {
+    private String model;
+    public Lorry(String model) {
+        this.model = model;
+    }
+
     @Override
     public void start() {
         System.out.println("Грузовик поехал");
