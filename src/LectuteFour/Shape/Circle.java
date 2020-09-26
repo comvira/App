@@ -9,4 +9,5 @@ public class Circle implements Shape {
     public double getSquare() {//площадь круга
         return Math.PI * Math.pow(r, 2);
     }
+
 }
