@@ -15,4 +15,9 @@ public class Lorry implements Car {
     public void stop() {
         System.out.println("грузовик остановился");
     }
+
+    @Override
+    public String getModel() {
+        return model;
+    }
 }
