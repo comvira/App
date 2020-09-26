@@ -5,7 +5,7 @@ public interface class Car {
     private String model;
     private int power;
 
-    public String  start();
+    public abstract String  start();
 
     public abstract String  stop();
 
