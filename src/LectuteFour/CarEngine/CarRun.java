@@ -9,8 +9,12 @@ public class CarRun {
         lorry.setModel("Honda");
         lorry.setPower(5);
         lorry.setManufacturer("Honda LTD");
+        lorry.setClassAuto("грузовик");
+        lorry.setWeight(8000.0);
         System.out.println(lorry.getModel());
         lorry.printInfo();
+
+        System.out.println();
 
         SportCar sportCar = new SportCar();
         sportCar.setModel("Ока");
