@@ -12,6 +12,7 @@ public class WeddingPlaner {
     }
 
     public void organize() {
+        restaurant.book();
         hall.book();
         restaurant.orderFood();
         photographer.book();
