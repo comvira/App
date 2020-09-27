@@ -1,13 +1,17 @@
 package LectuteFour.CarEngine;
 
-public interface class Car {
+public abstract class Car {
 
     private String model;
     private int power;
 
-    public abstract String  start();
+    public abstract String  start() {
 
-    public abstract String  stop();
+    }
+
+    public abstract String  stop() {
+
+    }
 
     public String getModel() {
         return model;
@@ -26,10 +30,13 @@ public interface class Car {
     }
 
     public void turnRight() {
-        System.out.println("Поворот направо");
+
     }
+
     public void turnLeft() {
-        System.out.println("Поворот налево");
+
     }
-    public void printInfo();
+    public void printInfo() {
+
+    }
 }

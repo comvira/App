@@ -1,6 +1,6 @@
 package LectuteFour.CarEngine;
 
-public class Lorry implements Car {
+public class Lorry extends Car {
     private String model;
     public Lorry(String model) {
         this.model = model;

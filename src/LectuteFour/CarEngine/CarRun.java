@@ -6,7 +6,7 @@ public class CarRun {
         car[0] = new Lorry("Honda");
         car[1] = new SportCar("Oka");
         for (CarRun cars : car) {
-            System.out.println("Площадь фигуры: " + cars.());
+            System.out.println(cars.());
         }
     }
 }
