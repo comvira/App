@@ -1,7 +1,7 @@
 package LectuteFour.CarEngine;
 
 class SportCar extends Car{
-
+    static int maxSpeed;
     public int getPower() {
         return super.power;
     }
@@ -18,20 +18,28 @@ class SportCar extends Car{
         super.manufacturer = manufacturer;
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     @Override
     public void printInfo() {
         super.printInfo();
+        System.out.println("Максимальная скорость: " + maxSpeed);
     }
 
     @Override
     public void start() {
-        System.out.println("SportCar поехал");
+        System.out.println(super.getClassAuto() +" поехал");
     }
 
     @Override
     public void stop() {
-        System.out.println("SportCar остановился");
-
+        System.out.println(super.getClassAuto() +"  остановился");
     }
 
     @Override

@@ -1,6 +1,15 @@
 package LectuteFour.CarEngine;
 
 class Lorry extends Car {
+    static int maxWeight;
+
+    public int getMaxWeight() {
+        return maxWeight;
+    }
+
+    public void setMaxWeight(int maxWeight) {
+        this.maxWeight = maxWeight;
+    }
 
     public int getPower() {
         return super.power;
@@ -21,16 +30,17 @@ class Lorry extends Car {
     @Override
     public void printInfo() {
         super.printInfo();
+        System.out.println("Максимальный груз: " + maxWeight);
     }
 
     @Override
     public void start() {
-         System.out.println("Грузовик поехал");
+         System.out.println(super.getClassAuto() +" поехал");
     }
 
     @Override
     public void stop() {
-        System.out.println("грузовик остановился");
+        System.out.println(super.getClassAuto() +"  остановился");
     }
 
     @Override

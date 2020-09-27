@@ -11,7 +11,10 @@ public class CarRun {
         lorry.setManufacturer("Honda LTD");
         lorry.setClassAuto("грузовик");
         lorry.setWeight(8000.0);
+        lorry.setMaxWeight(15000);
         System.out.println(lorry.getModel());
+        lorry.start();
+        lorry.stop();
         lorry.printInfo();
 
         System.out.println();
@@ -20,9 +23,12 @@ public class CarRun {
         sportCar.setModel("Ока");
         sportCar.setPower(0);
         sportCar.setManufacturer("ВедроСтроительный LTD");
-        lorry.setClassAuto("консервная банка");
-        lorry.setWeight(200.0);
+        sportCar.setClassAuto("консервная банка");
+        sportCar.setWeight(200.0);
+        sportCar.setMaxSpeed(60);
         System.out.println(sportCar.getModel());
+        sportCar.start();
+        sportCar.stop();
         sportCar.printInfo();
     }
 }
