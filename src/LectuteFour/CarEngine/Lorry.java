@@ -3,19 +3,19 @@ package LectuteFour.CarEngine;
 public abstract class Lorry extends Car {
 
     public int getPower() {
-        return Car.power;
+        return super.power;
     }
 
     public void setPower(int power) {
-        Car.power = power;
+        super.power = power;
     }
 
     public String getManufacturer() {
-        return Car.manufacturer;
+        return super.manufacturer;
     }
 
     public void setManufacturer(String manufacturer) {
-        Car.manufacturer = manufacturer;
+        super.manufacturer = manufacturer;
     }
 
     @Override
@@ -35,10 +35,10 @@ public abstract class Lorry extends Car {
 
 
     public void setModel(String model) {
-        Car.model = model;
+        super.model = model;
     }
 
     public String getModel() {
-        return Car.model;
+        return super.model;
     }
 }

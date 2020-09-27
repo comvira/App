@@ -10,22 +10,22 @@ public abstract class Car extends Engine{
 
     @Override
     public int getPower() {
-        return Engine.power;
+        return super.power;
     }
 
     @Override
     public void setPower(int power) {
-        Engine.power = power;
+        super.power = power;
     }
 
     @Override
     public String getManufacturer() {
-        return Engine.manufacturer;
+        return super.manufacturer;
     }
 
     @Override
     public void setManufacturer(String manufacturer) {
-        Engine.manufacturer = manufacturer;
+        super.manufacturer = manufacturer;
     }
 
     public String getModel() {
@@ -33,7 +33,7 @@ public abstract class Car extends Engine{
     }
 
     public void setModel(String model) {
-        Car.model = model;
+        this.model = model;
     }
 
     public abstract void turnLeft();
