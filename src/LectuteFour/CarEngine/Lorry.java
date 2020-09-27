@@ -1,6 +1,6 @@
 package LectuteFour.CarEngine;
 
-public abstract class Lorry extends Car {
+class Lorry extends Car {
 
     public int getPower() {
         return super.power;
@@ -31,6 +31,16 @@ public abstract class Lorry extends Car {
     @Override
     public String stop() {
         System.out.println("грузовик остановился");
+    }
+
+    @Override
+    public void turnRight() {
+
+    }
+
+    @Override
+    public void turnLeft() {
+
     }
 
 

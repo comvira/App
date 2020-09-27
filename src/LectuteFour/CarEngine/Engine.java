@@ -1,6 +1,6 @@
 package LectuteFour.CarEngine;
 
-public class Engine {
+class Engine {
     static int power;
     static String manufacturer;
 

@@ -1,6 +1,6 @@
 package LectuteFour.CarEngine;
 
-public abstract class Car extends Engine{
+abstract class Car extends Engine{
 
     static String model;
     public abstract String start();
