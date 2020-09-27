@@ -1,10 +1,7 @@
 package LectuteFour.CarEngine;
 
-public class Lorry extends Car {
+public abstract class Lorry extends Car {
     private String model;
-    public Lorry(String model) {
-        this.model = model;
-    }
 
     @Override
     public void printInfo() {
@@ -12,16 +9,20 @@ public class Lorry extends Car {
     }
 
     @Override
-    public void start() {
-        System.out.println("Грузовик поехал");
+    public String start() {
+         System.out.println("Грузовик поехал");
     }
 
     @Override
-    public void stop() {
+    public String stop() {
         System.out.println("грузовик остановился");
     }
 
-    @Override
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public String getModel() {
         return model;
     }

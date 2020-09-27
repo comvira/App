@@ -1,9 +1,9 @@
 package LectuteFour.CarEngine;
 
-public class SportCar extends Car{
+public abstract class SportCar extends Car{
     private String model;
     @Override
-    public void start() {
+    public String start() {
         System.out.println("SportCar поехал");
     }
 
@@ -13,14 +13,16 @@ public class SportCar extends Car{
     }
 
     @Override
-    public void stop() {
+    public String stop() {
         System.out.println("SportCar остановился");
+
     }
 
-    @Override
     public String getModel() {
         return model;
     }
 
-
+    public void setModel(String model) {
+        this.model = model;
+    }
 }
