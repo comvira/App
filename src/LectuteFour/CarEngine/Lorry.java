@@ -1,7 +1,22 @@
 package LectuteFour.CarEngine;
 
 public abstract class Lorry extends Car {
-    private String model;
+
+    public int getPower() {
+        return Car.power;
+    }
+
+    public void setPower(int power) {
+        Car.power = power;
+    }
+
+    public String getManufacturer() {
+        return Car.manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        Car.manufacturer = manufacturer;
+    }
 
     @Override
     public void printInfo() {
@@ -20,10 +35,10 @@ public abstract class Lorry extends Car {
 
 
     public void setModel(String model) {
-        this.model = model;
+        Car.model = model;
     }
 
     public String getModel() {
-        return model;
+        return Car.model;
     }
 }

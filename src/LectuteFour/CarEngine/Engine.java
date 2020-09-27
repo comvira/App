@@ -1,8 +1,8 @@
 package LectuteFour.CarEngine;
 
 public class Engine {
-    private int power;
-    private String manufacturer;
+    static int power;
+    static String manufacturer;
 
     public int getPower() {
          return power;
