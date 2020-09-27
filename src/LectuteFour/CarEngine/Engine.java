@@ -1,6 +1,6 @@
 package LectuteFour.CarEngine;
 
-public abstract class Engine {
+public class Engine {
     private int power;
     private String manufacturer;
 
