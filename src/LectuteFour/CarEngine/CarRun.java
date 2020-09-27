@@ -18,8 +18,10 @@ public class CarRun {
 
         SportCar sportCar = new SportCar();
         sportCar.setModel("Ока");
-        lorry.setPower(0);
-        lorry.setManufacturer("ВедроСтроительный LTD");
+        sportCar.setPower(0);
+        sportCar.setManufacturer("ВедроСтроительный LTD");
+        lorry.setClassAuto("консервная банка");
+        lorry.setWeight(200.0);
         System.out.println(sportCar.getModel());
         sportCar.printInfo();
     }
