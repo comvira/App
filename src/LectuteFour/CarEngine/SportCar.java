@@ -20,12 +20,12 @@ public abstract class SportCar extends Car{
 
     @Override
     public void printInfo() {
-
+        super.printInfo();
     }
 
     @Override
     public String start() {
-        System.out.println("SportCar поехал")
+        System.out.println("SportCar поехал");
     }
 
     @Override

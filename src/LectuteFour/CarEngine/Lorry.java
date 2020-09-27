@@ -20,7 +20,7 @@ public abstract class Lorry extends Car {
 
     @Override
     public void printInfo() {
-
+        super.printInfo();
     }
 
     @Override

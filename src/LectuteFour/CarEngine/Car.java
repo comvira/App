@@ -6,7 +6,12 @@ public abstract class Car extends Engine{
     public abstract String start();
     public abstract String stop();
     public abstract void turnRight();
-
+    public abstract void turnLeft();
+    public void printInfo(){
+        System.out.println("Модель: " + model);
+        System.out.println("Производитель: " + super.getManufacturer());
+        System.out.println("Power: " + super.getPower());
+    }
 
     @Override
     public int getPower() {
@@ -35,8 +40,4 @@ public abstract class Car extends Engine{
     public void setModel(String model) {
         this.model = model;
     }
-
-    public abstract void turnLeft();
-    public abstract void printInfo();
-
-}
+ }
