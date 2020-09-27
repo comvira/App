@@ -24,12 +24,12 @@ class Lorry extends Car {
     }
 
     @Override
-    public String start() {
+    public void start() {
          System.out.println("Грузовик поехал");
     }
 
     @Override
-    public String stop() {
+    public void stop() {
         System.out.println("грузовик остановился");
     }
 

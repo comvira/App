@@ -3,8 +3,8 @@ package LectuteFour.CarEngine;
 abstract class Car extends Engine{
 
     static String model;
-    public abstract String start();
-    public abstract String stop();
+    public abstract void start();
+    public abstract void stop();
     public abstract void turnRight();
     public abstract void turnLeft();
     public void printInfo(){

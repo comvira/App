@@ -24,12 +24,12 @@ class SportCar extends Car{
     }
 
     @Override
-    public String start() {
+    public void start() {
         System.out.println("SportCar поехал");
     }
 
     @Override
-    public String stop() {
+    public void stop() {
         System.out.println("SportCar остановился");
 
     }
