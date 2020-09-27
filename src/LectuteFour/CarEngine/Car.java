@@ -5,13 +5,9 @@ public abstract class Car {
     private String model;
     private int power;
 
-    public abstract String  start() {
+    public abstract String start();
 
-    }
-
-    public abstract String  stop() {
-
-    }
+    public abstract String stop();
 
     public String getModel() {
         return model;
@@ -36,7 +32,5 @@ public abstract class Car {
     public void turnLeft() {
 
     }
-    public void printInfo() {
-
-    }
+    public abstract void printInfo();
 }
