@@ -9,5 +9,6 @@ public class Hash2Set {
         s.add("B");
         s.add("C");
         System.out.println(s);
+        System.out.println(s.size());
     }
 }
