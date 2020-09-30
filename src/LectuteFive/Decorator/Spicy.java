@@ -1,0 +1,13 @@
+package LectuteFive.Decorator;
+
+public class Spicy extends PizzaDecorator {
+    public Spicy(Item pizza) {
+        super(pizza);
+    }
+
+    @Override
+    public void prepare() {
+        super.prepare();
+        System.out.println(" + острая");
+    }
+}
