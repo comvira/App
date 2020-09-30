@@ -20,5 +20,10 @@ public class DecoratorRun {
 
         Item pizza3 = new DoubleCheese(new Pizza());
         pizza3.prepare();
+
+        System.out.println();
+
+        Item pizza5 = new Mushrooms(new Pizza());
+        pizza5.prepare();
     }
 }
