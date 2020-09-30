@@ -3,8 +3,8 @@ package LectuteFive.Decorator;
 public class DecoratorRun {
     public static void main(String[] args) {
 
-        Item pizza4 = new Pizza();
-        pizza4.prepare();
+        Item pizza0 = new Pizza();
+        pizza0.prepare();
 
         System.out.println();
 
@@ -23,7 +23,7 @@ public class DecoratorRun {
 
         System.out.println();
 
-        Item pizza5 = new Mushrooms(new Pizza());
-        pizza5.prepare();
+        Item pizza4 = new Mushrooms(new Pizza());
+        pizza4.prepare();
     }
 }
