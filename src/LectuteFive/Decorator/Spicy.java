@@ -8,6 +8,6 @@ public class Spicy extends PizzaDecorator {
     @Override
     public void prepare() {
         super.prepare();
-        System.out.println(" + острая");
+        System.out.print(" + острая");
     }
 }
