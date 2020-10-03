@@ -1,4 +1,4 @@
-package LectuteFive.Facade;
+package LectuteFive.Structural.Facade;
 
 public class WeddingPlaner {
     private Hall hall;

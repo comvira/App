@@ -1,4 +1,4 @@
-package LectuteFive.Facade;
+package LectuteFive.Structural.Facade;
 
 public class Hall {
     public void book() {
