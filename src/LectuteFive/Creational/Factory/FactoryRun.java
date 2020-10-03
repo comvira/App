@@ -1,4 +1,4 @@
-package LectuteFive.Factory;
+package LectuteFive.Creational.Factory;
 
 import java.util.Scanner;
 

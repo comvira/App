@@ -1,4 +1,4 @@
-package LectuteFive.Factory;
+package LectuteFive.Creational.Factory;
 
 public class TCXFactory extends StoreFactory {
     @Override
