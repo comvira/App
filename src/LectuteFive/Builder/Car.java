@@ -18,7 +18,7 @@ public class Car {
         "name='" + name + '\'' +
         ", speed=" + speed +
         ", weight=" + weight +
-        ", engine=" + engine + '\'' +
-        '}';
+        ", engine='" + engine + '\'' +
+        ')';
     }
 }
