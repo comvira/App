@@ -1,4 +1,4 @@
-package LectuteFive.Decorator;
+package LectuteFive.Structural.Decorator;
 
 public class Mushrooms extends PizzaDecorator{
     public Mushrooms(Item pizza) {

@@ -1,4 +1,4 @@
-package LectuteFive.Decorator;
+package LectuteFive.Structural.Decorator;
 
 public interface Item {
     void prepare();

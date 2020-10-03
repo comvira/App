@@ -1,4 +1,4 @@
-package LectuteFive.Decorator;
+package LectuteFive.Structural.Decorator;
 
 public class DeepFried extends PizzaDecorator {
     public DeepFried(Item pizza) {

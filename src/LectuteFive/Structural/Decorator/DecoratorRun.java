@@ -1,4 +1,4 @@
-package LectuteFive.Decorator;
+package LectuteFive.Structural.Decorator;
 
 public class DecoratorRun {
     public static void main(String[] args) {

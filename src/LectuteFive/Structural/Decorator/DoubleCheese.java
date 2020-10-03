@@ -1,4 +1,4 @@
-package LectuteFive.Decorator;
+package LectuteFive.Structural.Decorator;
 
 public class DoubleCheese extends PizzaDecorator {
     public DoubleCheese(Item pizza) {
