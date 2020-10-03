@@ -1,9 +1,11 @@
-package LectuteFive.TaskOne;
+/*package LectuteFive.TaskOne;
 
 import java.util.Scanner;
 
 public class CalculatorRun {
     static Scanner scanner = new Scanner(System.in);
+    private static Object CalcType;
+    CalcType type = null;
 
     public static void main(String[] args) {
         int num1 = 0;
@@ -34,7 +36,22 @@ public class CalculatorRun {
             scanner.next();
         }
 
-        double result = Calc.calc(num1, num2, operation);
-        System.out.println("Результат операции: " + result);
+        for (CalcType type : CalcType) {
+            switch (type) {
+                case ConsoleLogger:
+                    type = new ConsoleLogger();
+                    break;
+                case FileLogger:
+                    type = new FileLogger();
+                    break;
+                case DbLogger:
+                    type = new DbLogger();
+                    break;
+                default:
+            }
+
+            double result = Calc.calc(num1, num2, operation);
+            System.out.println("Результат операции: " + result);
+        }
     }
-}
+}*/
