@@ -1,7 +1,7 @@
-package LectuteFive.TaskOne;
-/** деление */
+package Calculator;
+/** умножение */
 
-public class ToSplit {
+public class Multiply {
     private double sum;
     private int a;
     private int b;
