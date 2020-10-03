@@ -14,10 +14,12 @@ public abstract class Shape {
     abstract String accept(Visitor visitor);
 
     public String getName() {
+
         return name;
     }
 
     public int getSuare() {
+
         return square;
     }
 }

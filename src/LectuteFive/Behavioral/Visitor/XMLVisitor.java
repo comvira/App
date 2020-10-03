@@ -36,5 +36,6 @@ public class XMLVisitor implements Visitor {
                 "    <square>" + rectangle.getSuare() + "</square>" + "\n" +
                 "    </rectangle>";
 
+
     }
 }

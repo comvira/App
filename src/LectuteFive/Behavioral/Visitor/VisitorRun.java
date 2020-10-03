@@ -7,5 +7,6 @@ public class VisitorRun {
         Shape rectangle = new Rectangle("Normal Rectagle", 400);
         XMLVisitor visitor = new XMLVisitor();
         System.out.println(visitor.export(triangle, rectangle));
+
     }
 }

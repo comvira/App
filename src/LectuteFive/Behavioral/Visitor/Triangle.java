@@ -2,7 +2,7 @@ package LectuteFive.Behavioral.Visitor;
 
 public class Triangle extends Shape {
     public Triangle(String name, int square) {
-        super(name, square);
+         super(name, square);
     }
 
     @Override
@@ -12,6 +12,6 @@ public class Triangle extends Shape {
 
     @Override
     String accept(Visitor visitor) {
-        return visitor.visitTriangle(this);
+         return visitor.visitTriangle(this);
     }
 }

@@ -1,6 +1,7 @@
 package LectuteFive.Behavioral.Visitor;
 
 public class Rectangle extends Shape {
+
     public Rectangle(String name, int square) {
         super(name, square);
     }

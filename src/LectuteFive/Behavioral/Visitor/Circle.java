@@ -7,11 +7,13 @@ public class Circle extends Shape {
 
     @Override
     void draw() {
+
         System.out.println("Draw Circle");
     }
 
     @Override
     String accept(Visitor visitor) {
+
         return visitor.visitCircle(this);
     }
 }
