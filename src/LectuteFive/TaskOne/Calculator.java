@@ -6,56 +6,35 @@ public class Calculator {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int num1 = getInt();
-        int num2 = getInt();
-        char operation = getOperation();
-        int result = calc(num1,num2,operation);
-        System.out.println("Результат операции: "+result);
-    }
-
-    public static int getInt(){
+        int num1 = 0;
+        int num2 = 0;
+        char operation = 0;
         System.out.println("Введите число:");
-        int num;
-        if(scanner.hasNextInt()){
-            num = scanner.nextInt();
+        if (scanner.hasNextInt()) {
+            num1 = scanner.nextInt();
         } else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
             scanner.next();
-            num = getInt();
         }
-        return num;
-    }
-    public static char getOperation(){
+
+        if (scanner.hasNextInt()) {
+            System.out.println("Введите число:");
+            num2 = scanner.nextInt();
+        } else {
+            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
+            scanner.next();
+        }
+
         System.out.println("Введите операцию:");
-        char operation;
-        if(scanner.hasNext()){
+        if (scanner.hasNext()) {
             operation = scanner.next().charAt(0);
+            operation = operation;
         } else {
             System.out.println("Вы допустили ошибку при вводе операции. Попробуйте еще раз.");
-            scanner.next();//рекурсия
-            operation = getOperation();
+            scanner.next();
         }
-        return operation;
-    }
-    public static int calc(int num1, int num2, char operation){
-        int result;
-        switch (operation){
-            case '+':
-                result = num1+num2;
-                break;
-            case '-':
-                result = num1-num2;
-                break;
-            case '*':
-                result = num1*num2;
-                break;
-            case '/':
-                result = num1/num2;
-                break;
-            default:
-                System.out.println("Операция не распознана. Повторите ввод.");
-                result = calc(num1, num2, getOperation());
-        }
-        return result;
+
+        double result = Calc.calc(num1, num2, operation);
+        System.out.println("Результат операции: " + result);
     }
 }
