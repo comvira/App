@@ -1,4 +1,4 @@
-package LectuteFive.Visitor;
+package LectuteFive.Behavioral.Visitor;
 
 public class VisitorRun {
     public static void main(String[] args) {

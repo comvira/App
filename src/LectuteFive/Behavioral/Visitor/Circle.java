@@ -1,4 +1,4 @@
-package LectuteFive.Visitor;
+package LectuteFive.Behavioral.Visitor;
 
 public class Circle extends Shape {
     public Circle(String name, int square) {

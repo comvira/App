@@ -1,4 +1,4 @@
-package LectuteFive.Visitor;
+package LectuteFive.Behavioral.Visitor;
 
 public class Triangle extends Shape {
     public Triangle(String name, int square) {

@@ -1,4 +1,4 @@
-package LectuteFive.Visitor;
+package LectuteFive.Behavioral.Visitor;
 
 public abstract class Shape {
     private String name;
