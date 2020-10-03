@@ -2,7 +2,7 @@ package LectuteFive.TaskOne;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class CalculatorRun {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
