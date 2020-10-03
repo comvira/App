@@ -1,4 +1,4 @@
-package LectuteFive.Builder;
+package LectuteFive.Creational.Builder;
 
 public class Car {
     private String name;

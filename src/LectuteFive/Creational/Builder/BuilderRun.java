@@ -1,4 +1,4 @@
-package LectuteFive.Builder;
+package LectuteFive.Creational.Builder;
 
 public class BuilderRun {
     public static void main(String[] args) {
