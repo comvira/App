@@ -1,4 +1,4 @@
-package LectuteFive.Strategy;
+package LectuteFive.Behavioral.Strategy;
 
 public class MergeSort implements Strategy {
 

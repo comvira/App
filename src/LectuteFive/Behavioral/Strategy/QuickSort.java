@@ -1,4 +1,4 @@
-package LectuteFive.Strategy;
+package LectuteFive.Behavioral.Strategy;
 
 public class QuickSort implements Strategy {
     private int partition(int arr[], int begin, int end) {

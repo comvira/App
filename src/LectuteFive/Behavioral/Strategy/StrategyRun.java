@@ -1,4 +1,4 @@
-package LectuteFive.Strategy;
+package LectuteFive.Behavioral.Strategy;
 
 import java.util.Arrays;
 

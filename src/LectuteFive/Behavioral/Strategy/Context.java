@@ -1,4 +1,4 @@
-package LectuteFive.Strategy;
+package LectuteFive.Behavioral.Strategy;
 
 public class Context {
     private Strategy strategy;
