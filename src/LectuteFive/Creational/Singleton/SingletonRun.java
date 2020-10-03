@@ -1,4 +1,4 @@
-package LectuteFive.Singleton;
+package LectuteFive.Creational.Singleton;
 
 public class SingletonRun {
     public static void main(String[] args) {

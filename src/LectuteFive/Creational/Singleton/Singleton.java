@@ -1,4 +1,4 @@
-package LectuteFive.Singleton;
+package LectuteFive.Creational.Singleton;
 
 public class Singleton {
     private static Singleton instance;
