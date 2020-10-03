@@ -7,7 +7,7 @@ public class ToSplit {
     private int b;
 
     public int getSum() {
-        return a / b;
+        return a * b;
     }
 
     public void setA(int a) {

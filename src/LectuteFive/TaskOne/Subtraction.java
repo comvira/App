@@ -1,5 +1,5 @@
-package LectuteFive.TaskOne;
-/** вычитание */
+/*package LectuteFive.TaskOne;
+*//** вычитание *//*
 
 public class Subtraction {
     private double sum;
@@ -17,4 +17,4 @@ public class Subtraction {
     public void setB(int b) {
         this.b = b;
     }
-}
+}*/

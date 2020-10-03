@@ -1,4 +1,4 @@
-/*package LectuteFive.TaskOne;
+package LectuteFive.TaskOne;
 
 import java.util.Scanner;
 
@@ -54,4 +54,4 @@ public class CalculatorRun {
             System.out.println("Результат операции: " + result);
         }
     }
-}*/
+}

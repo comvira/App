@@ -1,5 +1,6 @@
+/*
 package LectuteFive.TaskOne;
-/** сложение */
+* сложение
 
 public class Fold {
     private double sum;
@@ -18,3 +19,4 @@ public class Fold {
         this.b = b;
     }
 }
+*/
