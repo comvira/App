@@ -10,7 +10,7 @@ public class Main {
         String monitor;
         ArrayList arr = new ArrayList();
 
-        System.out.println("Введите иарку монитора:");
+        System.out.println("Введите марку монитора:");
         monitor = sc.nextLine();
         arr.add("Монитор: " + monitor + ", ");
 
