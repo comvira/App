@@ -32,8 +32,9 @@ public class CalculatorRun {
             scanner.next();
         }
 
+        System.out.println("Введите число:");
         if (scanner.hasNextInt()) {
-            //System.out.println("Введите число:");
+
             num2 = scanner.nextInt();
         } else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
