@@ -6,10 +6,10 @@ public class Context {
     public Context() {
     }
     public void setStrategy(Strategy strategy) {
-         this.strategy = strategy;
+        this.strategy = strategy;
     }
 
-    public void createComp(String[] arr) {
+    public void createComp(CompType arr) {
         strategy.createStringArray(arr);
     }
 }

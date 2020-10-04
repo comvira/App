@@ -1,5 +1,5 @@
 package LectuteFive.TaskTwo;
 
 public interface Strategy {
-    void createStringArray(String[] array);
+    void createStringArray(CompType array);
 }

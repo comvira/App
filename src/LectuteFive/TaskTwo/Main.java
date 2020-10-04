@@ -1,16 +1,13 @@
 package LectuteFive.TaskTwo;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args, Memory memory) {
         System.out.println("Какой коммпьютер собираем?");
         Scanner sc = new Scanner(System.in);
         CompType type = null;
-        String monitor;
-        String[] array;
 
         try {
             type = CompType.valueOf(sc.nextLine());
@@ -32,21 +29,20 @@ public class Main {
 
         //arr.add("Монитор: " + monitor + ", ");
         Context context = new Context();
-        context.setStrategy(new ComputerAssembler()) {
+        context.setStrategy((Strategy) new ComputerAssembler());
 
-            context.createComp(array);
-            System.out.println(Arrays.toString(array));
-        }
+
 
         System.out.println("Введите марку монитора:");
-        Computer computer = new Computer();
-        monitor = sc.nextLine();
-        computer.setMonitor() = monitor;
+        Monitor monitor = new Monitor();
+        Computer computer = new Computer(processor, memory, disk);
         computer.setClassComp("Ноут");
 
         ComputerAssembler computerAssembler = new ComputerAssembler();
         computerAssembler.getCreateComp();
 
+        context.createComp(type);
+        System.out.println(Arrays.toString(arr));
         //System.out.println(Arrays.toString(arr.toArray()));
     }
 }
