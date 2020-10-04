@@ -2,7 +2,7 @@ package LectuteFive.TaskOne;
 
 public class ConsoleLogger implements CalcLog {
     @Override
-    public void runCalc() {
+    public void createLog() {
         System.out.print("Log into console: ");
     }
 

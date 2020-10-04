@@ -1,8 +1,8 @@
 package LectuteFive.TaskOne;
 
-public abstract class ConsoleFactory extends CalcFactory {
+public class ConsoleFactory extends CalcFactory {
     @Override
-    public CalcLog runCalc () {
+    public CalcLog createLog () {
         return new ConsoleLogger();
     }
 }
