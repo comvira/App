@@ -9,6 +9,8 @@ public class Main {
         System.out.println("Какой коммпьютер собираем?");
         Scanner sc = new Scanner(System.in);
         CompType type = null;
+        String monitor;
+        String[] array;
 
         try {
             type = CompType.valueOf(sc.nextLine());
@@ -17,8 +19,6 @@ public class Main {
             System.exit(0);
         }
 
-        String monitor;
-        String[] array;
         //ArrayList arr = new ArrayList();
 
         Processor processor = new Processor();
@@ -46,8 +46,6 @@ public class Main {
 
         ComputerAssembler computerAssembler = new ComputerAssembler();
         computerAssembler.getCreateComp();
-
-
 
         //System.out.println(Arrays.toString(arr.toArray()));
     }
