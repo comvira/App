@@ -17,7 +17,6 @@ public class Main {
             System.exit(0);
         }
 
-        Scanner sc = new Scanner(System.in);
         String monitor;
         String[] array;
         //ArrayList arr = new ArrayList();
