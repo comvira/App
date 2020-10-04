@@ -3,16 +3,18 @@ package LectuteFive.TaskTwo;
 public class Computer {
     private String monitor;
     private String classComp;
+    private Processor processor;
+    private Memory memory;
+    private VideoCard videoCard;
+    private Disk disk;
 
     public String getClassComp() {
         return classComp;
     }
 
     public void setClassComp(String classComp) {
-        this.classCop = classComp;
+        this.classComp = classComp;
     }
-
-    private String classCop;
 
     public String getMonitor() {
         return monitor;
@@ -20,5 +22,11 @@ public class Computer {
 
     public void setMonitor(String monitor) {
         this.monitor = monitor;
+    }
+
+    public Computer(Processor processor, Memory memory, Disk disc) {
+        this.processor = processor;
+        this.memory = memory;
+        this.disk = disk;
     }
 }
