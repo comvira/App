@@ -10,11 +10,8 @@ public class Main {
         System.out.println("Введите иарку монитора:");
         monitor = sc.nextLine();
 
-        ComputerAssembler computerAssembler = new ComputerAssembler() {
-            @Override
-            public void getCreateComp() {
-                super.getCreateComp();
-            }
-        }
+        ComputerAssembler computerAssembler = new ComputerAssembler();
+        computerAssembler.getCreateComp();
+
     }
 }
