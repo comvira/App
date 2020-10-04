@@ -44,6 +44,7 @@ public class Main {
         monitor = sc.nextLine();
         computer.setMonitor() = monitor;
         computer.setClassComp("Ноут");
+
         ComputerAssembler computerAssembler = new ComputerAssembler();
         computerAssembler.getCreateComp();
 
