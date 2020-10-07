@@ -1,14 +1,14 @@
 package LectuteFive.TaskTwo;
 
 public class Context {
-    private Strategy strategy;
 
+    private Strategy strategy;
     public Context() {
     }
-    public void setStrategy(Strategy strategy) {
-        this.strategy = strategy;
+    public void setStrategy(ComputerFacade strategy) {
+        this.strategy = (Strategy) strategy;
     }
-
+    public ComputerAssembler setStrategy;
     public void createComp(CompType arr) {
         strategy.createStringArray(arr);
     }

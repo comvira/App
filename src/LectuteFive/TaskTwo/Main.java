@@ -1,5 +1,7 @@
 package LectuteFive.TaskTwo;
 
+import LectuteFive.Behavioral.Strategy.QuickSort;
+
 import java.util.Scanner;
 
 public class Main {
@@ -32,7 +34,7 @@ public class Main {
 
         //arr.add("Монитор: " + monitor + ", ");
         Context context = new Context();
-        context.setStrategy((Strategy) new ComputerAssembler());
+        context.setStrategy = new ComputerAssembler();
 
         System.out.println("Введите марку монитора:");
         Monitor monitor = new Monitor();
@@ -42,7 +44,7 @@ public class Main {
         ComputerAssembler computerAssembler = new ComputerAssembler();
         computerAssembler.getCreateComp();
 
-        context.createComp(type);
+        context.setStrategy(new ComputerFacade());
 
         System.out.println(computer.getClassComp());
     }
