@@ -1,13 +1,14 @@
 package LectuteFive.TaskTwo;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args, Memory memory) {
-        System.out.println("Какой коммпьютер собираем?");
+    public static void main(String[] args) {
+        System.out.println("Какой коммпьютер собираем? " +
+                "HOMELAPTOP, WORKLAPTOP, WORKSTATION, HOMESTATION, TABLET");
         Scanner sc = new Scanner(System.in);
         CompType type = null;
+        //Computer computer = new Computer();
 
         try {
             type = CompType.valueOf(sc.nextLine());
@@ -27,11 +28,12 @@ public class Main {
         Disk disk = new Disk();
         disk.setManufacture("Toshiba");
 
+        Memory memory = new Memory();
+        memory.setManufacture("Toshiba");
+
         //arr.add("Монитор: " + monitor + ", ");
         Context context = new Context();
         context.setStrategy((Strategy) new ComputerAssembler());
-
-
 
         System.out.println("Введите марку монитора:");
         Monitor monitor = new Monitor();
@@ -42,7 +44,8 @@ public class Main {
         computerAssembler.getCreateComp();
 
         context.createComp(type);
-        System.out.println(Arrays.toString(arr));
+
+        System.out.println(computer.getClassComp());
         //System.out.println(Arrays.toString(arr.toArray()));
     }
 }
