@@ -45,6 +45,5 @@ public class Main {
         context.createComp(type);
 
         System.out.println(computer.getClassComp());
-        //System.out.println(Arrays.toString(arr.toArray()));
     }
 }
