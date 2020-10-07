@@ -1,7 +1,5 @@
 package LectuteFive.TaskTwo;
 
-import LectuteFive.Behavioral.Strategy.QuickSort;
-
 import java.util.Scanner;
 
 public class Main {
