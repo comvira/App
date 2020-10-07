@@ -8,7 +8,6 @@ public class Main {
                 "HOMELAPTOP, WORKLAPTOP, WORKSTATION, HOMESTATION, TABLET");
         Scanner sc = new Scanner(System.in);
         CompType type = null;
-        //Computer computer = new Computer();
 
         try {
             type = CompType.valueOf(sc.nextLine());
