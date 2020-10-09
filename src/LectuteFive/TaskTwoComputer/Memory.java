@@ -6,35 +6,26 @@ public class Memory {
     private int frequency;
     private String memoryType;
 
-    public String getManufacture() {
-        return manufacture;
+    public Memory(String manufacture, int memorySize, int frequency, String memoryType) {
+        this.manufacture = manufacture;
+        this.memorySize = memorySize;
+        this.frequency = frequency;
+        this.memoryType = memoryType;
     }
 
-    public void setManufacture(String manufacture) {
-        this.manufacture = manufacture;
+    public String getManufacture() {
+        return manufacture;
     }
 
     public int getMemorySize() {
         return memorySize;
     }
 
-    public void setMemorySize(int memorySize) {
-        this.memorySize = memorySize;
-    }
-
     public int getFrequency() {
         return frequency;
     }
 
-    public void setFrequency(int frequency) {
-        this.frequency = frequency;
-    }
-
     public String getMemoryType() {
         return memoryType;
-    }
-
-    public void setMemoryType(String memoryType) {
-        this.memoryType = memoryType;
     }
 }

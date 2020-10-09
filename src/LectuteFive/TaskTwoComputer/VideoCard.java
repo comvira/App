@@ -7,43 +7,31 @@ public class VideoCard {
     private int frequency;
     private boolean cooling; //охлаждение(активное или пассивное)
 
-    public String getManufacture() {
-        return manufacture;
+    public VideoCard(String manufacture, String memoryType, int memorySize, int frequency, boolean cooling) {
+        this.manufacture = manufacture;
+        this.memoryType = memoryType;
+        this.memorySize = memorySize;
+        this.frequency = frequency;
+        this.cooling = cooling;
     }
 
-    public void setManufacture(String manufacture) {
-        this.manufacture = manufacture;
+    public String getManufacture() {
+        return manufacture;
     }
 
     public String getMemoryType() {
         return memoryType;
     }
 
-    public void setMemoryType(String memoryType) {
-        this.memoryType = memoryType;
-    }
-
     public int getMemorySize() {
         return memorySize;
-    }
-
-    public void setMemorySize(int memorySize) {
-        this.memorySize = memorySize;
     }
 
     public int getFrequency() {
         return frequency;
     }
 
-    public void setFrequency(int frequency) {
-        this.frequency = frequency;
-    }
-
     public boolean isCooling() {
         return cooling;
-    }
-
-    public void setCooling(boolean cooling) {
-        this.cooling = cooling;
     }
 }

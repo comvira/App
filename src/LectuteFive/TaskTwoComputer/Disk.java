@@ -6,35 +6,26 @@ public class Disk {
     private String typeDisk;
     private int formFactor;
 
-    public String getManufacture() {
-        return manufacture;
+    public Disk(String manufacture, int memorySize, String typeDisk, int formFactor) {
+        this.manufacture = manufacture;
+        this.memorySize = memorySize;
+        this.typeDisk = typeDisk;
+        this.formFactor = formFactor;
     }
 
-    public void setManufacture(String manufacture) {
-        this.manufacture = manufacture;
+    public String getManufacture() {
+        return manufacture;
     }
 
     public int getMemorySize() {
         return memorySize;
     }
 
-    public void setMemorySize(int memorySize) {
-        this.memorySize = memorySize;
-    }
-
     public String getTypeDisk() {
         return typeDisk;
     }
 
-    public void setTypeDisk(String typeDisk) {
-        this.typeDisk = typeDisk;
-    }
-
     public int getFormFactor() {
         return formFactor;
-    }
-
-    public void setFormFactor(int formFactor) {
-        this.formFactor = formFactor;
     }
 }
