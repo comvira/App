@@ -7,6 +7,7 @@ public class Monitor {
     }
     public Monitor(String manufacture) {
         this.manufacture = manufacture;
+
     }
 
 

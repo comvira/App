@@ -15,6 +15,8 @@ public class ComputerFacade implements NewComputer {
         this.disk = disk;
         this.monitor = monitor;
         this.compType = compType;
+
+
     }
 
 /*    public void setCompType(CompType compType) {

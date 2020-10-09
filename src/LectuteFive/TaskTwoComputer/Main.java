@@ -37,6 +37,7 @@ public class Main {
             System.out.println(s[i]);
         }
 
+
         System.out.println(monitor.getManufacture());
 
         System.out.println(compType);

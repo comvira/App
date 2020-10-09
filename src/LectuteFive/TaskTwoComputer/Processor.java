@@ -8,6 +8,7 @@ public class Processor {
     private String name;
     private String manufacture;
 
+
     public Processor(String clockFrequency, int numCore, int memorySize, String name, String manufacture) {
         this.clockFrequency = clockFrequency;
         this.numCore = numCore;

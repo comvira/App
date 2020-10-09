@@ -6,6 +6,7 @@ public class Disk {
     private String typeDisk;
     private int formFactor;
 
+
     public Disk(String manufacture, int memorySize, String typeDisk, int formFactor) {
         this.manufacture = manufacture;
         this.memorySize = memorySize;

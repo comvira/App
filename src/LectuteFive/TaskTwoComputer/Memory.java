@@ -6,6 +6,7 @@ public class Memory {
     private int frequency;
     private String memoryType;
 
+
     public Memory(String manufacture, int memorySize, int frequency, String memoryType) {
         this.manufacture = manufacture;
         this.memorySize = memorySize;

@@ -13,6 +13,7 @@ public class VideoCard {
         this.memorySize = memorySize;
         this.frequency = frequency;
         this.cooling = cooling;
+
     }
 
     public String getManufacture() {
