@@ -1,11 +1,21 @@
 package LectuteFour.CarEngine;
 
-class Engine {
-    static int power;
-    static String manufacturer;
+public abstract class Engine {
+    private int power;
+    private String manufacturer;
+
+    public Engine(int power, String manufacturer) {
+        this.power = power;
+        this.manufacturer = manufacturer;
+    }
+
+    Engine() {
+
+    }
+
 
     public int getPower() {
-         return power;
+        return power;
     }
 
     public String getManufacturer() {
@@ -13,10 +23,10 @@ class Engine {
     }
 
     public void setPower(int power) {
-        this.power = power;
+         this.power = power;
     }
 
     public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+          this.manufacturer = manufacturer;
     }
 }
