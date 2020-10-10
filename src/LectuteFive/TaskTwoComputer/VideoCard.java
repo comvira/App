@@ -1,6 +1,6 @@
 package LectuteFive.TaskTwoComputer;
 
-public class VideoCard {
+public class VideoCard implements NewComputer{
     private String manufacture;
     private String memoryType;
     private int memorySize;
@@ -13,26 +13,13 @@ public class VideoCard {
         this.memorySize = memorySize;
         this.frequency = frequency;
         this.cooling = cooling;
-
     }
 
-    public String getManufacture() {
-        return manufacture;
-    }
-
-    public String getMemoryType() {
-        return memoryType;
-    }
-
-    public int getMemorySize() {
-        return memorySize;
-    }
-
-    public int getFrequency() {
-        return frequency;
-    }
-
-    public boolean isCooling() {
-        return cooling;
+    public void createComputer() {
+        System.out.println(manufacture);
+        System.out.println(memoryType);
+        System.out.println(memorySize);
+        System.out.println(frequency);
+        System.out.println(cooling);
     }
 }

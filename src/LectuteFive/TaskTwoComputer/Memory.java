@@ -1,11 +1,10 @@
 package LectuteFive.TaskTwoComputer;
 
-public class Memory {
+public class Memory implements NewComputer{
     private String manufacture;
     private int memorySize;
     private int frequency;
     private String memoryType;
-
 
     public Memory(String manufacture, int memorySize, int frequency, String memoryType) {
         this.manufacture = manufacture;
@@ -14,19 +13,10 @@ public class Memory {
         this.memoryType = memoryType;
     }
 
-    public String getManufacture() {
-        return manufacture;
-    }
-
-    public int getMemorySize() {
-        return memorySize;
-    }
-
-    public int getFrequency() {
-        return frequency;
-    }
-
-    public String getMemoryType() {
-        return memoryType;
+    public void createComputer() {
+        System.out.println(manufacture);
+        System.out.println(memorySize);
+        System.out.println(frequency);
+        System.out.println(memoryType);
     }
 }

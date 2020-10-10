@@ -1,11 +1,10 @@
 package LectuteFive.TaskTwoComputer;
 
-public class Disk {
+public class Disk implements NewComputer {
     private String manufacture;
     private int memorySize;
     private String typeDisk;
     private int formFactor;
-
 
     public Disk(String manufacture, int memorySize, String typeDisk, int formFactor) {
         this.manufacture = manufacture;
@@ -14,19 +13,10 @@ public class Disk {
         this.formFactor = formFactor;
     }
 
-    public String getManufacture() {
-        return manufacture;
-    }
-
-    public int getMemorySize() {
-        return memorySize;
-    }
-
-    public String getTypeDisk() {
-        return typeDisk;
-    }
-
-    public int getFormFactor() {
-        return formFactor;
+    public void createComputer() {
+        System.out.println(manufacture);
+        System.out.println(memorySize);
+        System.out.println(typeDisk);
+        System.out.println(formFactor);
     }
 }

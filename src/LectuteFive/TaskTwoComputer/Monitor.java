@@ -10,10 +10,7 @@ public class Monitor {
 
     }
 
-
-
     public String getManufacture() {
         return manufacture;
     }
-
 }
