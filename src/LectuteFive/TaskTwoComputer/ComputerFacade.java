@@ -13,7 +13,6 @@ public  class ComputerFacade implements NewComputer {
         memory = new Memory("Toshiba",8,4,"DDR");
         videoCard = new VideoCard("Intel","A",4,5,true);
         disk = new Disk("Toshiba",255,"SSD",3);
-
     }
 
     public void setCompType(CompType compType) {
@@ -26,10 +25,19 @@ public  class ComputerFacade implements NewComputer {
 
     public void createComputer() {
         processor.createComputer();
+        System.out.println();
+
         videoCard.createComputer();
+        System.out.println();
+
         memory.createComputer();
+        System.out.println();
+
         disk.createComputer();
+        System.out.println();
+
         System.out.println(compType.toString());
+
         System.out.println(monitor.getManufacture());
     }
 }
