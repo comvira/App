@@ -14,6 +14,17 @@ public class Main {
 
         try {
             compType = CompType.valueOf(sc.nextLine());
+            Processor processor = new Processor("AMD",4,5,"что-то","AMD");
+            computerFacade.setProcessor(processor);
+
+            Memory memory = new Memory("Toshiba",8,4,"DDR");
+            computerFacade.setMemory(memory);
+
+            VideoCard videoCard = new VideoCard("Intel","A",4,5,true);
+            computerFacade.setVideoCard(videoCard);
+
+            Disk disk = new Disk("Toshiba",255,"SSD",3);
+            computerFacade.setDisk(disk);
 
         } catch (Exception e) {
             System.out.println("Нет такого типа компьютера");

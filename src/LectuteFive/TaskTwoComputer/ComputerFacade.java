@@ -9,10 +9,27 @@ public class ComputerFacade implements NewComputer {
     private CompType compType;
 
     public ComputerFacade() {
-        processor = new Processor("AMD",4,5,"что-то","AMD");
-        memory = new Memory("Toshiba",8,4,"DDR");
-        videoCard = new VideoCard("Intel","A",4,5,true);
-        disk = new Disk("Toshiba",255,"SSD",3);
+
+        //processor = new Processor("AMD",4,5,"что-то","AMD");
+        //memory = new Memory("Toshiba",8,4,"DDR");
+        //videoCard = new VideoCard("Intel","A",4,5,true);
+        //disk = new Disk("Toshiba",255,"SSD",3);
+    }
+
+    public void setProcessor(Processor processor){
+        this.processor= processor;
+    }
+
+    public void setMemory(Memory memory) {
+        this.memory = memory;
+    }
+
+    public void setVideoCard(VideoCard videoCard) {
+        this.videoCard = videoCard;
+    }
+
+    public void setDisk(Disk disk) {
+        this.disk = disk;
     }
 
     public void setCompType(CompType compType) {
