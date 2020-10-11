@@ -6,10 +6,6 @@ public class CoolingContext {
         this.strategyCooling = strategyCooling;
     }
 
-    public void setStrategyCooling() {
-        strategyCooling.cooling();
-    }
-
     public String cooling() {
         return strategyCooling.cooling();
     }
