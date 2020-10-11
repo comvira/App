@@ -6,6 +6,7 @@ public class VideoCard implements NewComputer{
     private int memorySize;
     private int frequency;
     private boolean cooling; //охлаждение(активное или пассивное)
+    private String scooling;
 
     public VideoCard(String manufacture, String memoryType, int memorySize, int frequency, boolean cooling) {
         this.manufacture = manufacture;
@@ -20,6 +21,13 @@ public class VideoCard implements NewComputer{
         System.out.println("Тип памяти: "+memoryType);
         System.out.println("Объём памяти: "+memorySize);
         System.out.println("Частота: "+frequency);
-        System.out.println("Охлаждение(активное или пассивное): "+cooling);
+
+        if (cooling = true) {
+            scooling = "Активное";
+        } else {
+            scooling = "Пассивное";
+        }
+
+        System.out.println("Охлаждение: "+scooling);
     }
 }
