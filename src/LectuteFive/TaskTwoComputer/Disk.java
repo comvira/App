@@ -14,9 +14,9 @@ public class Disk implements NewComputer {
     }
 
     public void createComputer() {
-        System.out.println(manufacture);
-        System.out.println(memorySize);
-        System.out.println(typeDisk);
-        System.out.println(formFactor);
+        System.out.println("Производитель: "+manufacture);
+        System.out.println("Объём диска: "+memorySize);
+        System.out.println("Тип диска: "+typeDisk);
+        System.out.println("Форм-Фактор: "+formFactor);
     }
 }

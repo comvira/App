@@ -1,6 +1,6 @@
 package LectuteFive.TaskTwoComputer;
 
-public  class ComputerFacade implements NewComputer {
+public class ComputerFacade implements NewComputer {
     private Processor processor;
     private Memory memory;
     private VideoCard videoCard;
@@ -24,20 +24,24 @@ public  class ComputerFacade implements NewComputer {
     }
 
     public void createComputer() {
+        System.out.println("Процессор:");
         processor.createComputer();
         System.out.println();
 
+        System.out.println("Видеокарта:");
         videoCard.createComputer();
         System.out.println();
 
+        System.out.println("ОЗУ:");
         memory.createComputer();
         System.out.println();
 
+        System.out.println("Диск:");
         disk.createComputer();
         System.out.println();
 
-        System.out.println(compType.toString());
+        System.out.println("Тип компьютера: "+compType.toString());
 
-        System.out.println(monitor.getManufacture());
+        System.out.println("Монитор: "+monitor.getManufacture());
     }
 }

@@ -14,9 +14,9 @@ public class Memory implements NewComputer{
     }
 
     public void createComputer() {
-        System.out.println(manufacture);
-        System.out.println(memorySize);
-        System.out.println(frequency);
-        System.out.println(memoryType);
+        System.out.println("Производитель: "+manufacture);
+        System.out.println("Объём памяти: "+memorySize);
+        System.out.println("Частота: "+frequency);
+        System.out.println("Тип памяти: "+memoryType);
     }
 }

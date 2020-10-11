@@ -1,11 +1,12 @@
 package LectuteFive.TaskTwoComputer;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Какой коммпьютер собираем? " +
-                "HOMELAPTOP, WORKLAPTOP, WORKSTATION, HOMESTATION, TABLET");
+                Arrays.toString(CompType.values()));
         Scanner sc = new Scanner(System.in);
         CompType compType = null;
 
@@ -24,6 +25,9 @@ public class Main {
 
         computerFacade.setCompType(compType);
         computerFacade.setMonitor(monitor);
+
+        System.out.println();
+
         computerFacade.createComputer();
     }
 }

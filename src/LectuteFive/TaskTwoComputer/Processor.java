@@ -7,7 +7,8 @@ public class Processor implements NewComputer {
     private String name;
     private String manufacture;
 
-    public Processor(String clockFrequency, int numCore, int memorySize, String name, String manufacture) {
+    public Processor(String clockFrequency, int numCore, int memorySize,
+                     String name, String manufacture) {
         this.clockFrequency = clockFrequency;
         this.numCore = numCore;
         this.memorySize = memorySize;
@@ -16,10 +17,10 @@ public class Processor implements NewComputer {
     }
 
     public void createComputer() {
-        System.out.println(clockFrequency);
-        System.out.println(numCore);
-        System.out.println(memorySize);
-        System.out.println(name);
-        System.out.println(manufacture);
+        System.out.println("Частота: "+clockFrequency);
+        System.out.println("Кол-во ядер: "+numCore);
+        System.out.println("Размер памяти: "+memorySize);
+        System.out.println("Наименование: "+name);
+        System.out.println("Производитель: "+manufacture);
     }
 }
