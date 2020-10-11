@@ -5,9 +5,9 @@ public class Monitor {
 
     public Monitor() {
     }
+
     public Monitor(String manufacture) {
         this.manufacture = manufacture;
-
     }
 
     public String getManufacture() {
