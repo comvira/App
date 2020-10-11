@@ -28,8 +28,6 @@ public class VideoCard implements NewComputer{
             scooling = "Пассивное";
         }*/
 
-
-
         if (cooling = true) {
             CoolingContext coolingContext = new CoolingContext(new CoolingActive());
             scooling = coolingContext.cooling();
@@ -37,7 +35,6 @@ public class VideoCard implements NewComputer{
             CoolingContext coolingContext = new CoolingContext(new CoolingPassive());
             scooling = coolingContext.cooling();
         }
-
 
         System.out.println("Охлаждение: "+scooling);
     }
