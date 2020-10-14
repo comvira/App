@@ -7,7 +7,6 @@ public class Memory extends Detail {
     private String memoryType;
 
     public Memory(String manufacture, int memorySize, int frequency, String memoryType) {
-        super();
         super.manufacture = manufacture;
         super.memorySize = memorySize;
         this.frequency = frequency;
