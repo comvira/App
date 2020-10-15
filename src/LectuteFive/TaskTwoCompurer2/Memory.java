@@ -12,7 +12,7 @@ public class Memory extends Detail {
         this.frequency = frequency;
         this.memoryType = memoryType;
     }
-
+    @Override
     public void createComputer() {
         System.out.println("Производитель: "+super.manufacture);
         System.out.println("Объём памяти: "+super.memorySize);

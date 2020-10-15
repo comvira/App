@@ -6,7 +6,7 @@ public class Monitor extends Detail {
     public Monitor(String manufacture) {
         super.manufacture = manufacture;
     }
-
+    @Override
     public void createComputer() {
         System.out.println("Производитель: " + super.manufacture);
     }

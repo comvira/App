@@ -1,6 +1,6 @@
 package LectuteFive.TaskTwoCompurer2;
 
-public abstract class Detail {
+public abstract class Detail implements Computer {
     public String manufacture;
     public int memorySize;
 
@@ -11,6 +11,11 @@ public abstract class Detail {
 
     public Detail(String manufacture) {
         this.manufacture = manufacture;
+    }
+
+    @Override
+    public void createComputer() {
+
     }
 
     public Detail() {
