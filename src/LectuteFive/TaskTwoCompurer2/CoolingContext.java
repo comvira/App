@@ -1,9 +1,7 @@
 package LectuteFive.TaskTwoCompurer2;
 
-import LectuteFive.TaskTwoComputer.StrategyCooling;
-
 public class CoolingContext {
-    private LectuteFive.TaskTwoComputer.StrategyCooling strategyCooling;
+    private StrategyCooling strategyCooling;
     public CoolingContext(StrategyCooling strategyCooling) {
         this.strategyCooling = strategyCooling;
     }

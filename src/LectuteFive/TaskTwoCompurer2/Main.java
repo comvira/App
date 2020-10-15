@@ -29,7 +29,7 @@ public class Main {
         Memory memory = new Memory("Toshiba",8,4,"DDR");
         computer_Facade.setMemory(memory);
         VideoCard videoCard = new VideoCard("Intel","B",
-                4,4,false);
+                4,4,true);
         computer_Facade.setVideoCard(videoCard);
         Disk disk = new Disk("Toshiba",128,"SSD",4);
         computer_Facade.setDisk(disk);
