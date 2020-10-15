@@ -22,13 +22,13 @@ public class VideoCard implements NewComputer{
         System.out.println("Объём памяти: "+memorySize);
         System.out.println("Частота: "+frequency);
 
-        /*if (cooling = true) {
+        /*if (cooling == true) {
             scooling = "Активное";
         } else {
             scooling = "Пассивное";
         }*/
 
-        if (cooling = true) {
+        if (cooling == true) {
             CoolingContext coolingContext = new CoolingContext(new CoolingActive());
             scooling = coolingContext.cooling();
         } else {
