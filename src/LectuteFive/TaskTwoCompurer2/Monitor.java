@@ -7,7 +7,7 @@ public class Monitor extends Detail {
         super.manufacture = manufacture;
     }
 
-    public String getManufacture() {
-        return manufacture;
+    public void createComputer() {
+        System.out.println("Производитель: " + super.manufacture);
     }
 }
