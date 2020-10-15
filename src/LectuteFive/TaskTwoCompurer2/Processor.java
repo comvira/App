@@ -16,6 +16,7 @@ public class Processor extends Detail {
         super.manufacture = manufacture;
     }
 
+    @Override
     public void createComputer() {
         System.out.println("Частота: "+clockFrequency);
         System.out.println("Кол-во ядер: "+numCore);
