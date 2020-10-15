@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Какой коммпьютер собираем? " +
+        System.out.println("Какой компьютер собираем? " +
                 Arrays.toString(CompType.values()));
         Scanner sc = new Scanner(System.in);
         CompType compType = null;
