@@ -23,5 +23,20 @@ public class Main {
         for (String val : list) {
             System.out.println(val);
         }
+
+        //вариант 3
+        System.out.println(list);
+
+        //add in list
+        list.add(2,"15");
+        System.out.println(list);
+
+        //remove in list item
+        list.remove("2");
+        System.out.println(list);
+
+        //remove in list index
+        list.remove(1);
+        System.out.println(list);
     }
 }
