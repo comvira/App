@@ -1,6 +1,6 @@
 package LectuteFive.Test;
 
-public class Monitor extends Detail {
+public class Monitor implements Detail {
 
     private String manufacture;
 
@@ -9,11 +9,7 @@ public class Monitor extends Detail {
     }
 
     @Override
-    public void createComputer() {
-        System.out.println("Производитель: " + this.manufacture);
-    }
-
-    public String getManufacture(){
-        return this.manufacture;
+    public void createDetail() {
+        System.out.println("Производитель монитора: " + manufacture);
     }
 }
