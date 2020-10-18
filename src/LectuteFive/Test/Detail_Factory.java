@@ -6,7 +6,7 @@ public class Detail_Factory {
 
         switch (detail) {
             case MONITOR:
-                toReturn = new Monitor();
+                toReturn = new Monitor();//если идти таким путём то без сетторов не обойтись :(
                 break;
             case PROCESSOR:
                 toReturn = new Processor();
