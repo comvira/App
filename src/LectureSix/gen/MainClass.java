@@ -8,6 +8,10 @@ public class MainClass {
         PairSupplier supplier = new PairSupplier();
         Pair<Integer, String> intStringPair = supplier.getIntStringPair();
 
+        Pair<String, String> strStringPair =  new Pair<>("a","b");
+        use(strStringPair.getVal1());
+        use(strStringPair.getVal2());
+
         Integer integerVal = intStringPair.getVal1();
         String stringVal = intStringPair.getVal2();
 
