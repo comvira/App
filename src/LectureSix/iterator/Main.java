@@ -12,9 +12,15 @@ public class Main {
         list.add("3");
         list.add("4");
 
-        Iterator<String> iterator = list.listIterator();
+        //вариант 1
+/*        Iterator<String> iterator = list.listIterator();
         while (iterator.hasNext()) { //пока есть элементы
             String val = iterator.next();
+            System.out.println(val);
+        }*/
+
+        //вариант 2
+        for (String val : list) {
             System.out.println(val);
         }
     }
