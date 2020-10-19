@@ -28,5 +28,9 @@ public class Main {
         }
 
         System.out.println(lst);
+
+        lst.clear();
+
+        System.out.println(lst);
     }
 }
