@@ -1,0 +1,15 @@
+package Exceptions;
+
+public class TryCach {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 0;
+        try {
+            System.out.println(x / y);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("try");
+    }
+}
