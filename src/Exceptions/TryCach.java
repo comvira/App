@@ -5,7 +5,9 @@ public class TryCach {
         int x = 10;
         int y = 0;
         try {
-            System.out.println(x / y);
+            throw new ExampleException();
+            //System.out.println(x / y);
+
         }
         catch (Exception e) {
             e.printStackTrace();
