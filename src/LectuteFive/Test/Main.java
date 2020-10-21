@@ -7,7 +7,7 @@ public class Main {
 
         Processor_Factory processor_factory =
                 new Processor_Factory(3000,4,8,
-                        "AMD","AMD");
+                        "AMD","AMD tm");
 
         processor_factory.createDetail();
         processor_factory.getInfo();
