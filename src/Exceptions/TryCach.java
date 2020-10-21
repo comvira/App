@@ -1,6 +1,8 @@
 package Exceptions;
 
+
 public class TryCach {
+
     public static void main(String[] args) {
         int x = 10;
         int y = 0;
