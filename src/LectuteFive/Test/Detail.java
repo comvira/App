@@ -1,6 +1,8 @@
 package LectuteFive.Test;
 
 public interface Detail {
-    void createDetail();
+    public default void createDetail() {
+
+    }
     void getInfo();
 }

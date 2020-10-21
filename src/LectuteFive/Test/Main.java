@@ -5,9 +5,11 @@ public class Main {
         Monitor monitor = new Monitor("Philips");
         monitor.getInfo();
 
-        Processor processor = new Processor(1000,
-                4,4,"Core","Intel");
-        processor.getInfo();
+        Processor_Factory processor_factory =
+                new Processor_Factory(3000,4,8,
+                        "AMD","AMD");
 
+        processor_factory.createDetail();
+        processor_factory.getInfo();
     }
 }
