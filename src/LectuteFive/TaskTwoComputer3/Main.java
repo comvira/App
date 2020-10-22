@@ -41,10 +41,14 @@ public class Main {
         anyComponent.getComponentType();
 
         Computer computer = new Computer(compType.toString());
-        Processor processor = new Processor("Core i3", "6Mb", "L3", "Intel tm", 4.3, 4);
-        Memory memory = new Memory("ASUS", "4Gb", "DDR4", "ASUS", 2400.D);
-        VideoCard videoCard = new VideoCard("Intel", "4Gb", "DDR", "MSI", CoolingType.Active);
-        Disk disk = new Disk("Toshiba", "128Gb", "SSD", "Toshiba tm", 3.5);
+        Processor processor = new Processor("Core i3", "6Mb",
+                "L3", "Intel tm", 4.3, 4);
+        Memory memory = new Memory("ASUS", "4Gb",
+                "DDR4", "ASUS", 2400.D);
+        VideoCard videoCard = new VideoCard("Intel", "4Gb",
+                "DDR", "MSI", CoolingType.Active);
+        Disk disk = new Disk("Toshiba", "128Gb", "SSD",
+                "Toshiba tm", 3.5);
         Monitor monitor = new Monitor("Philips tm");
 
         computer.setProcessor(processor);
