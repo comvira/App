@@ -1,5 +1,5 @@
 package LectuteFive.Test;
 
-public interface Computer {
-    void createComputer();
+public class Computer {
+
 }
