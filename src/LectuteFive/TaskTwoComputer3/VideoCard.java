@@ -1,8 +1,8 @@
 package LectuteFive.TaskTwoComputer3;
 
 public class VideoCard extends DetailPC {
-    public VideoCard(String name, String volMem, String tipMem, String manufacturerName, CoolingType coolingVideo) {
-        super(name, volMem, tipMem, manufacturerName);
+    public VideoCard(String name, String volMem, String typeMem, String manufacturerName, CoolingType coolingVideo) {
+        super(name, volMem, typeMem, manufacturerName);
         this.coolingVideo = coolingVideo;
         this.componentType = "VideoCard";
     }

@@ -1,9 +1,9 @@
 package LectuteFive.TaskTwoComputer3;
 
 public class Processor extends DetailPC {
-    public Processor(String name, String volMem, String tipMem,
+    public Processor(String name, String volMem, String typeMem,
                String manufacturerName, double cpuspeed, int cpunumCores) {
-        super(name, volMem, tipMem, manufacturerName);
+        super(name, volMem, typeMem, manufacturerName);
         this.cpuSpeed = cpuspeed;
         this.cpuNumCores = cpunumCores;
         this.componentType = "Processor";
