@@ -12,7 +12,7 @@ public class Main {
         перейти - диск внешний купил, Ubuntu поставил,
         но пока руки до неё не доходят - времяни нет :( работы хватает
         */
-        Path p = Paths.get("C:", "/temp", "bank", "Account.txt");
+        Path p = Paths.get("C:", separatorChar +"temp", "bank", "Account.txt");
         Path parent = p.getParent();
 
         // тут проверяем наличие дирректории и если нет создаём
