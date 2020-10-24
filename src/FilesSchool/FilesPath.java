@@ -1,5 +1,8 @@
 package FilesSchool;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -17,6 +20,13 @@ public class FilesPath {
         System.out.println(file);
         System.out.println(root);
 
-
+        try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
+            String str;
+            while((str = reader.readLine()) != null){
+                System.out.println(str);
+            }
+        } catch (IOException ex){
+            ex.printStackTrace();
+        }
     }
 }
