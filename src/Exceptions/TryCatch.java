@@ -1,7 +1,7 @@
 package Exceptions;
 
 
-public class TryCach {
+public class TryCatch {
 
     public static void main(String[] args) {
         int x = 10;
