@@ -15,13 +15,10 @@ public class Main {
         Path p = Paths.get("C:", "/temp", "bank", "Account.txt");
         Path parent = p.getParent();
 
+        // тут проверяем наличие дирректории и если нет создаём
         File file = new File(parent.toString());
         if (!file.exists()) {
-            if (file.mkdirs()) {
-                System.out.println("Directory is created!");
-            } else {
-                System.out.println("Failed to create directory!");
-            }
+            file.mkdirs();
         }
 
 /*        System.out.println(parent.getParent());
