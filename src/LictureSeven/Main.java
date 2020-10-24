@@ -20,13 +20,5 @@ public class Main {
         if (!file.exists()) {
             file.mkdirs();
         }
-
-/*        System.out.println(parent.getParent());
-        if (!File.exists(parent.getParent())) {
-            new File("C:/"  + parent.getParent()).mkdir();
-        }
-        if (! File.exists(p.getParent())) {
-            new File("C:" + separatorChar + p.getParent()).mkdir();
-        }*/
     }
 }
