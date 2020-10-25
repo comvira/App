@@ -93,10 +93,12 @@ public class Main {
                         System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
+
                     case "BALANCE": typeOperation =str;
 
                         System.out.println(typeOperation);
                         break;
+
                     case "DEPOSIT": typeOperation =str;
                         if (in.hasNextInt()){
                             account = in.nextInt();
@@ -116,6 +118,7 @@ public class Main {
                         System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
+
                     case "TRANSFER": typeOperation =str;
                         if (in.hasNextInt()){
                             account = in.nextInt();
@@ -139,6 +142,7 @@ public class Main {
                         System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
+
                     case "RENAMECLIENT": typeOperation =str;
                         if (in.hasNextInt()){
                             account = in.nextInt();
@@ -146,7 +150,9 @@ public class Main {
 
                         if (in.hasNext()){
                             holder = in.next();
+                            System.out.println(typeOperation + " " + account + " " + holder);
                         }
+
                         break;
                 }
             }
