@@ -95,8 +95,9 @@ public class Main {
                         break;
 
                     case "BALANCE": typeOperation =str;
-
-                        System.out.println(typeOperation);
+                        Balance balance = new Balance();
+                        balance.create();
+                        //System.out.println(typeOperation);
                         break;
 
                     case "DEPOSIT": typeOperation =str;
