@@ -94,7 +94,8 @@ public class Main {
                         summa = 0.0;
                         break;
                     case "BALANCE": typeOperation =str;
-                        
+
+                        System.out.println(typeOperation);
                         break;
                     case "DEPOSIT": typeOperation =str;
                         if (in.hasNextInt()){
