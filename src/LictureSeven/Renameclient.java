@@ -14,13 +14,13 @@ public class Renameclient implements Operation{
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
             String str;
-            String acc = String.valueOf(Main.account);
-            String name = Main.holder;
+            String account = String.valueOf(Main.account);
+            String holder = Main.holder;
             while((str = reader.readLine()) != null){
                 String[] arr = str.split(";");
 
-                if (arr[0].equals(acc)) {
-                    System.out.println((arr[1]) + " изменение имени на " + name);
+                if (arr[0].equals(account)) {
+                    System.out.println((arr[1]) + " изменение имени на " + holder);
                 }
             }
 

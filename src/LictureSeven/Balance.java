@@ -14,11 +14,11 @@ public class Balance implements Operation{
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
             String str;
-            String acc = String.valueOf(Main.account);
+            String account = String.valueOf(Main.account);
             while((str = reader.readLine()) != null){
                 String[] arr = str.split(";");
 
-                if (arr[0].equals(acc)) {
+                if (arr[0].equals(account)) {
                     System.out.println(arr[2]);
                 }
             }

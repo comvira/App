@@ -14,12 +14,12 @@ public class Deposit implements Operation{
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
             String str;
-            String acc = String.valueOf(Main.account);
+            String account = String.valueOf(Main.account);
             double sum = 0.0;
             while((str = reader.readLine()) != null){
                 String[] arr = str.split(";");
 
-                if (arr[0].equals(acc)) {
+                if (arr[0].equals(account)) {
                     System.out.println(Double.parseDouble(arr[2]) + Main.summa);
                 }
             }

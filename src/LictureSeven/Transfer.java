@@ -24,7 +24,7 @@ public class Transfer implements Operation {
                 if (arr[0].equals(acc)) {
                     if (Double.parseDouble(arr[2]) >= sum) {
                         System.out.println(sum);
-                        System.out.println(arr[0] + " снятие: " + (Double.parseDouble(arr[2]) - sum));
+                        System.out.println(arr[0] + " остаток послк перевода: " + (Double.parseDouble(arr[2]) - sum));
                     } else {
                         System.out.println("Не достаточно средств.");
                     }
@@ -44,6 +44,5 @@ public class Transfer implements Operation {
         } catch (IOException ex){
             System.out.println(ex);
         }
-
     }
 }
