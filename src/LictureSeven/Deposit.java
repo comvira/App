@@ -8,24 +8,24 @@ import java.nio.file.Paths;
 
 import static java.io.File.separatorChar;
 
-public class Balance implements Operation{
+public class Deposit implements Operation{
     @Override
     public void create() {
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
             String str;
             String acc = String.valueOf(Main.account);
+            double sum = 0.0;
             while((str = reader.readLine()) != null){
                 String[] arr = str.split(";");
 
                 if (arr[0].equals(acc)) {
-                    System.out.println(arr[2]);
+                    System.out.println(Double.parseDouble(arr[2]) + Main.summa);
                 }
             }
 
         } catch (IOException ex){
             ex.printStackTrace();
         }
-        System.out.println("Balance");
     }
 }

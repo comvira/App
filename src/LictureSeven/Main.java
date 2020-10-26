@@ -23,14 +23,14 @@ public class Main {
     private static void InfoExit(){
         System.out.println("Для выхода введите 'exit'.");
     }
+    public static String typeOperation;
+    public static String holder;
+    public static int account = 0;
+    public static double summa = 0.0;
+    public static int recipient = 0; // счёт получалеля
 
+    public static  void main(String[] args) {
 
-    public static void main(String[] args) {
-        String typeOperation;
-        String holder;
-        int account = 0;
-        double summa = 0.0;
-        int recipient = 0; // счёт получалеля
 
         /** у меня windows 10 пока, надеюсь если получится на Linux попробую
          перейти - диск внешний купил, Ubuntu поставил,
@@ -98,13 +98,14 @@ public class Main {
                     case "BALANCE": typeOperation =str;
                         account = in.nextInt();
                         Balance balance = new Balance();
-                        balance.create(account);
+                        balance.create();
                         //System.out.println(typeOperation);
                         break;
 
                     case "DEPOSIT": typeOperation =str;
                         if (in.hasNextInt()){
                             account = in.nextInt();
+
                         }
 
                         if (in.hasNext()) {
@@ -113,6 +114,8 @@ public class Main {
                                 str = str.replace(",", ".");
 
                                 summa = Double.parseDouble(str);
+                                Deposit deposit = new Deposit();
+                                deposit.create();
                             } catch (NumberFormatException e) {
                                 System.err.println("Неверный формат суммы!");
                             }
@@ -153,10 +156,14 @@ public class Main {
 
                         if (in.hasNext()){
                             holder = in.next();
-                            System.out.println(typeOperation + " " + account + " " + holder);
+                            Renameclient renameclient = new Renameclient();
+                            renameclient.create();
+                            //System.out.println(typeOperation + " " + account + " " + holder);
                         }
 
                         break;
+                    default:
+                        System.out.println("Неверный тип операции.");
                 }
             }
 
