@@ -24,12 +24,13 @@ public class Main {
         System.out.println("Для выхода введите 'exit'.");
     }
 
+
     public static void main(String[] args) {
         String typeOperation;
         String holder;
         int account = 0;
         double summa = 0.0;
-        int recipient; // счёт получалеля
+        int recipient = 0; // счёт получалеля
 
         /** у меня windows 10 пока, надеюсь если получится на Linux попробую
          перейти - диск внешний купил, Ubuntu поставил,
@@ -63,18 +64,18 @@ public class Main {
         // String exit = "exit";
         Scanner in = new Scanner(System.in);
         String strarr;
-        strarr = Arrays.toString(OperationType.values());
+        strarr = Arrays.toString(OperationType.values()).toUpperCase();
         System.out.println("Типы операций: " + strarr);
         InfoExit();
 
         while (in.hasNextLine()) {
             str = in.next();
-
+            str = str.toUpperCase();
             if(strarr.toLowerCase().contains(str.toLowerCase())) {
                 System.out.println("Операция: " + str);
                         
                 switch (str) {
-                    case "WITHDRAW": typeOperation =str;
+                    case "WITHDRAW": typeOperation = str;
                         if (in.hasNextInt()){
                             account = in.nextInt();
                         }
@@ -95,8 +96,9 @@ public class Main {
                         break;
 
                     case "BALANCE": typeOperation =str;
+                        account = in.nextInt();
                         Balance balance = new Balance();
-                        balance.create();
+                        balance.create(account);
                         //System.out.println(typeOperation);
                         break;
 
@@ -158,7 +160,7 @@ public class Main {
                 }
             }
 
-            if (str.equals("exit")) { // if (str.intern() == exit) {
+            if (str.equals("EXIT")) { // if (str.intern() == exit) {
                 System.out.println("Работа завершена.");
                 in.close();
                 System.exit(0);

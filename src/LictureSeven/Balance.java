@@ -10,13 +10,19 @@ import static java.io.File.separatorChar;
 
 public class Balance implements Operation{
     @Override
-    public void create() {
+    public void create(int account) {
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try(BufferedReader reader = new BufferedReader(new FileReader(p.toString()))){
             String str;
+            String acc = String.valueOf(account);
             while((str = reader.readLine()) != null){
-                System.out.println(str);
+                String[] arr = str.split(";");
+
+                if (arr[0].equals(acc)) {
+                    System.out.println(arr[2]);
+                }
             }
+
         } catch (IOException ex){
             ex.printStackTrace();
         }

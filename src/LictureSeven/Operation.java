@@ -1,5 +1,5 @@
 package LictureSeven;
 
 public interface Operation {
-    void create();
+    void create(int account);
 }
