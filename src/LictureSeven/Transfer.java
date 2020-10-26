@@ -29,7 +29,6 @@ public class Transfer implements Operation {
                         System.out.println("Не достаточно средств.");
                     }
                 }
-                //reader.close();
             }
         } catch (IOException ex) {
             ex.printStackTrace();
