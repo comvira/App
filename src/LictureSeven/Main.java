@@ -85,13 +85,16 @@ public class Main {
                                 str = in.next();
                                 str = str.replace(",", ".");
 
-                                summa = -Double.parseDouble(str);
+                                summa = Double.parseDouble(str);
+                                Withdraw withdraw = new Withdraw();
+                                withdraw.create();
+
                             } catch (NumberFormatException e) {
                                 System.err.println("Неверный формат суммы!");
                             }
                         }
 
-                        System.out.println(typeOperation + " " + account + " " + summa);
+                        //System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
 
@@ -140,12 +143,14 @@ public class Main {
                                 str = str.replace(",", ".");
 
                                 summa = Double.parseDouble(str);
+                                Transfer transfer = new Transfer();
+                                transfer.create();
                             } catch (NumberFormatException e) {
                                 System.err.println("Неверный формат суммы!");
                             }
                         }
 
-                        System.out.println(typeOperation + " " + account + " " + summa);
+                        //System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
 
