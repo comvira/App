@@ -23,14 +23,14 @@ public class Main {
     private static void InfoExit(){
         System.out.println("Для выхода введите 'exit'.");
     }
-    public static String typeOperation;
+
     public static String holder;
     public static int account = 0;
     public static double summa = 0.0;
     public static int recipient = 0; // счёт получалеля
 
     public static  void main(String[] args) {
-
+        String typeOperation;
 
         /** у меня windows 10 пока, надеюсь если получится на Linux попробую
          перейти - диск внешний купил, Ubuntu поставил,
