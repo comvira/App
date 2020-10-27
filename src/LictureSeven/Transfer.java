@@ -17,7 +17,7 @@ public class Transfer implements Operation {
         String rec = String.valueOf(Main.recipient);
         double sum = Main.summa;
         ArrayList<String> arrAcc = new ArrayList(); // account
-        ArrayList<String> arrRec = new ArrayList(); // accont получателя
+        ArrayList<String> arrRec = new ArrayList(); // account получателя
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         try (BufferedReader reader = new BufferedReader(new FileReader(p.toString()))) {
 
@@ -29,7 +29,7 @@ public class Transfer implements Operation {
                         arr[2] = String.valueOf(Double.parseDouble(arr[2]) - sum);
                         arrAcc.add(0,arr[0] + ";" + arr[1] + ";" + arr[2]);
                         System.out.println(arr[0] + " остаток после перевода: " + arr[2]);
-                        System.out.println(arr[2]);
+                        //System.out.println(arr[2]);
                     } else {
                         System.out.println("Не достаточно средств.");
                         return;
