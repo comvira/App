@@ -26,6 +26,6 @@ public class Balance implements Operation{
         } catch (IOException ex){
             ex.printStackTrace();
         }
-        System.out.println("Balance");
+        //System.out.println("Balance");
     }
 }

@@ -51,7 +51,7 @@ public class Transfer implements Operation {
                     if (arrOut[0].equals(rec)) {
                         arrOut[2] = String.valueOf(Double.parseDouble(arrOut[2]) + sum);
                         arrRec.add(0,arrOut[0] + ";" + arrOut[1] + ";" + arrOut[2]);
-                        System.out.println(arrOut[0] + " приход: " + (Double.parseDouble(arrOut[2]) + sum));
+                        System.out.println(arrOut[0] + " приход: " + Double.parseDouble(arrOut[2]));
                     } else {
                         arrRec.add(0,arrOut[0] + ";" + arrOut[1] + ";" + arrOut[2]);
                     }

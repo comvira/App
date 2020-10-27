@@ -178,7 +178,7 @@ public class Main {
                 System.exit(0);
             }
 
-            System.out.println(str);
+            //System.out.println(str);
         }
     }
 }
