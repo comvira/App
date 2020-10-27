@@ -31,20 +31,22 @@ public class Transfer implements Operation {
                 }
             }
 
+            try (BufferedReader readerOut = new BufferedReader(new FileReader(p.toString()))) {
+                while ((str = readerOut.readLine()) != null) {
+                    String[] arrOut = str.split(";");
+
+                    if (arrOut[0].equals(rec)) {
+                        System.out.println(arrOut[0] + " приход: " + (Double.parseDouble(arrOut[2]) + sum));
+                    }
+                }
+            } catch (IOException exOut) {
+                System.out.println(exOut);
+            }
+
+            //запись в файл:
 
         } catch (IOException ex) {
             ex.printStackTrace();
-        }
-        try (BufferedReader reader = new BufferedReader(new FileReader(p.toString()))) {
-            while ((str = reader.readLine()) != null) {
-                String[] arrOut = str.split(";");
-
-                if (arrOut[0].equals(rec)) {
-                    System.out.println(arrOut[0] + " приход: " + (Double.parseDouble(arrOut[2]) + sum));
-                }
-            }
-        } catch (IOException ex){
-            System.out.println(ex);
         }
     }
 }
