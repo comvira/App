@@ -49,45 +49,13 @@ public class CalculatorRun {
             scanner.next();
         }
 
-         switch (operation) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                System.out.println("Операция не распознана. Повторите ввод.");
-                break;
-        }
-
         System.out.println("Результат операции: ");
 
-        CalcFactory factory = null;
-        switch (type) {
-            case CONSOLE:
-                factory = new ConsoleFactory();
-                break;
-            case DB:
-                factory = new DbFactory();
-                break;
-            case FILE:
-                factory = new FileFactory();
-                break;
-            default:
-        }
-        if (factory != null) {
-            CalcLog calcLog = factory.createLog();
-            calcLog.createLog();
-        }
+        Calculator calc = new Calculator();
 
-        System.out.println(result);
+        calc.calclog(type);
+
+        System.out.println(calc.calculation(num1, num2, operation));
     }
 }
 
