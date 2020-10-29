@@ -1,6 +1,6 @@
 package LectuteFive.TaskTwoComputer3;
 
-public class MemoryFactory extends Detail_Factory{
+public class MemoryFactory extends DetailFactory{
     @Override
     public Detail createDetailPC (){
         return new Memory("","",

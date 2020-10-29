@@ -19,25 +19,25 @@ public class Main {
         }
 
         Detail anyComponent;
-        Detail_Factory detail_factory;
-        detail_factory = new Processor_Factory();
-        anyComponent = detail_factory.createDetailPC();
+        DetailFactory detailfactory;
+        detailfactory = new ProcessorFactory();
+        anyComponent = detailfactory.createDetailPC();
         anyComponent.getComponentType();
 
-        detail_factory = new Memory_Factory();
-        anyComponent = detail_factory.createDetailPC();
+        detailfactory = new MemoryFactory();
+        anyComponent = detailfactory.createDetailPC();
         anyComponent.getComponentType();
 
-        detail_factory = new VideoCard_Factory();
-        anyComponent = detail_factory.createDetailPC();
+        detailfactory = new VideoCardFactory();
+        anyComponent = detailfactory.createDetailPC();
         anyComponent.getComponentType();
 
-        detail_factory = new Disk_Factory();
-        anyComponent = detail_factory.createDetailPC();
+        detailfactory = new DiskFactory();
+        anyComponent = detailfactory.createDetailPC();
         anyComponent.getComponentType();
 
-        detail_factory = new Monitor_Factory();
-        anyComponent = detail_factory.createDetailPC();
+        detailfactory = new MonitorFactory();
+        anyComponent = detailfactory.createDetailPC();
         anyComponent.getComponentType();
 
         Computer computer = new Computer(compType.toString());
