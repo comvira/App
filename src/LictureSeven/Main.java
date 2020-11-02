@@ -12,6 +12,7 @@ import java.util.Scanner;
 import static java.io.File.separatorChar;
 
 public class Main {
+
     private static void InfoOperation(Boolean b) {
         if (b == true){
             System.out.println("Операция проведена.");
