@@ -27,15 +27,11 @@ public class Main {
     public static String holder;
     public static int account = 0;
     public static double summa = 0.0;
-    public static int recipient = 0; // счёт получалеля
+    public static int recipient = 0;
 
     public static  void main(String[] args) {
         String typeOperation;
 
-        /** у меня windows 10 пока, надеюсь если получится на Linux попробую
-         перейти - диск внешний купил, Ubuntu поставил,
-         но пока руки до неё не доходят - времяни нет :( работы хватает
-         */
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         Path parent = p.getParent();
 
@@ -94,7 +90,6 @@ public class Main {
                             }
                         }
 
-                        //System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
 
@@ -150,7 +145,6 @@ public class Main {
                             }
                         }
 
-                        //System.out.println(typeOperation + " " + account + " " + summa);
                         summa = 0.0;
                         break;
 
@@ -163,7 +157,6 @@ public class Main {
                             holder = in.next();
                             Renameclient renameclient = new Renameclient();
                             renameclient.create();
-                            //System.out.println(typeOperation + " " + account + " " + holder);
                         }
 
                         break;
@@ -172,13 +165,11 @@ public class Main {
                 }
             }
 
-            if (str.equals("EXIT")) { // if (str.intern() == exit) {
+            if (str.equals("EXIT")) {
                 System.out.println("Работа завершена.");
                 in.close();
                 System.exit(0);
             }
-
-            //System.out.println(str);
         }
     }
 }

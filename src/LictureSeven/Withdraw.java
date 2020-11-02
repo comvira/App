@@ -17,7 +17,7 @@ public class Withdraw implements Operation {
         String str;
         String account = String.valueOf(Main.account);
         double sum = Main.summa;
-        ArrayList<String> arrAcc = new ArrayList(); // account
+        ArrayList<String> arrAcc = new ArrayList();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(p.toString()))) {
 
@@ -37,7 +37,7 @@ public class Withdraw implements Operation {
                     arrAcc.add(0,arr[0] + ";" + arr[1] + ";" + arr[2]);
                 }
             }
-            //запись в файл:
+
             OverwriteFile.save(arrAcc);
 
         } catch (IOException ex) {

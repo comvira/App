@@ -38,7 +38,7 @@ public class Transfer implements Operation {
                     arrAcc.add(0,arr[0] + ";" + arr[1] + ";" + arr[2]);
                 }
             }
-            //запись в файл:
+
             OverwriteFile.save(arrAcc);
 
 
@@ -56,13 +56,11 @@ public class Transfer implements Operation {
                         arrRec.add(0,arrOut[0] + ";" + arrOut[1] + ";" + arrOut[2]);
                     }
                 }
-                //запись в файл:
+
                 OverwriteFile.save(arrRec);
-                readerOut.close();
                 } catch (IOException exOut) {
                 System.out.println(exOut);
             }
-            reader.close();
 
         } catch (IOException ex) {
             ex.printStackTrace();

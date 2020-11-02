@@ -20,19 +20,19 @@ public class Account {
     }
 
     public void withdraw(float withdraw){
-        amount = this.amount - withdraw;// снимаем деньги со счёта
+        amount = this.amount - withdraw;
     }
 
     public float getAmount() {
-        return this.amount;// возвращает сумму счёта
+        return this.amount;
     }
 
     public void setAmount(float amount) {
-        this.amount = this.amount + amount;// добавить деньгт на счёт
+        this.amount = this.amount + amount;
     }
 
     public void transfer(Long id, float amount){
-        this.amount = this.amount - amount; // перевод на другой счёт
+        this.amount = this.amount - amount;
         Account account = new Account(id);
         account.setAmount(amount);
     }
