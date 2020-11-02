@@ -35,7 +35,6 @@ public class Main {
         Path p = Paths.get("C:", separatorChar + "temp", "bank", "Account.txt");
         Path parent = p.getParent();
 
-        // тут проверяем наличие дирректории и если нет создаём
         File dir = new File(parent.toString());
         if (!dir.exists()) {
             dir.mkdirs();
@@ -57,7 +56,7 @@ public class Main {
         }
 
         String str;
-        // String exit = "exit";
+
         Scanner in = new Scanner(System.in);
         String strarr;
         strarr = Arrays.toString(OperationType.values()).toUpperCase();
@@ -86,6 +85,7 @@ public class Main {
                                 withdraw.create();
 
                             } catch (NumberFormatException e) {
+                                e.printStackTrace();
                                 System.err.println("Неверный формат суммы!");
                             }
                         }
@@ -93,11 +93,10 @@ public class Main {
                         summa = 0.0;
                         break;
 
-                    case "BALANCE": typeOperation =str;
+                    case "BALANCE": typeOperation = str;
                         account = in.nextInt();
                         Balance balance = new Balance();
                         balance.create();
-                        //System.out.println(typeOperation);
                         break;
 
                     case "DEPOSIT": typeOperation =str;
@@ -115,6 +114,7 @@ public class Main {
                                 Deposit deposit = new Deposit();
                                 deposit.create();
                             } catch (NumberFormatException e) {
+                                e.printStackTrace();
                                 System.err.println("Неверный формат суммы!");
                             }
                         }
@@ -141,6 +141,7 @@ public class Main {
                                 Transfer transfer = new Transfer();
                                 transfer.create();
                             } catch (NumberFormatException e) {
+                                e.printStackTrace();
                                 System.err.println("Неверный формат суммы!");
                             }
                         }
