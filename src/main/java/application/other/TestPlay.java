@@ -1,6 +1,6 @@
-package main.java.other;
+package main.java.application.other;
 
-import main.java.other.resources.PrintOut;
+import main.java.resources.PrintOut;
 
 public class TestPlay {
     public static void main(String[] args) {

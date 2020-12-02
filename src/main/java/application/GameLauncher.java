@@ -1,6 +1,6 @@
-package main.java.main;
+package main.java.application;
 
-import main.java.main.resources.GuessGame;
+import main.java.resources.GuessGame;
 
 public class GameLauncher {
     public static void main (String[] args) {

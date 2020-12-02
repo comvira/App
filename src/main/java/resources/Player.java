@@ -1,4 +1,4 @@
-package main.java.main.resources;
+package main.java.resources;
 
 public class Player {
     int number = 0; // Здесь хранится вариант числа

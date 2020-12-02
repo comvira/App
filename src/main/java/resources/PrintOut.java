@@ -1,4 +1,4 @@
-package main.java.other.resources;
+package main.java.resources;
 
 public class PrintOut{
     String sSting;
